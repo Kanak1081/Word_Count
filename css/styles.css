@@ -1,0 +1,71 @@
+
+h1{
+    font-family: 'Piedra', cursive;
+    color: white;
+}
+.container{
+    font-family: 'Lilita One', cursive;
+    padding: 2% 5% 0% 5%;
+    color: white;
+}
+.row{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 1.4rem;
+}
+.bg_img{
+    background-image: url("https://static3.bigstockphoto.com/5/4/2/large1500/245337748.jpg");
+    height: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+}
+.card{
+    font-family: 'Montserrat', sans-serif;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #475f17;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #475f17;
+    color: black;
+    transform: rotateY(180deg);
+  }
+  
